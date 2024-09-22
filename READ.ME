@@ -1,0 +1,23 @@
+Para rodar o projeto, é necessario ter o Flask instalado,
+apos instalar, rode o comando "python -m flask --app index run" para rodar o projeto
+
+O arquivo users.txt é usado como banco de dados, para armazenar as informações dos usuarios
+segue abaixo uma documentacao para como usar as rotas
+
+POST - /register
+Body esperado:
+{
+    "name": "Fabio",
+    "mail": "fabio@gmail.com",
+    "neighborhood": "Venda Nova"
+}
+
+POST - /routine
+Body esperado:
+{
+    "message": "vai chover acima do esperado",
+    "neighborhood": "Venda Nova",
+    "date": "03/10/2024"
+}
+
+Tive dificuldade em utilizar uma biblioteca para efetivamente enviar os email, mas a questao da validação está la :)
